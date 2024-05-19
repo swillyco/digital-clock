@@ -9,7 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<meta http-equiv="Icon" content="/images/favicon.ico">-->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.png">
         <link rel="stylesheet" href="styles.css">
          <title>Digital Clock</title>
     </head>
@@ -18,12 +21,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="video-container">
-            <video autoplay loop muted width="100%">
-                <source src="/images/sunset.mp4" type="video/mp4" />
-            </video>                
+        <div class="container">
+            <div class="content">
+                <h1 id="clock">Digital Clock</h1>
+                <video autoplay loop muted playsinline  class="background-clip">
+                    <source src="/images/sunset.mp4" type="video/mp4" />
+                </video>   
+            </div>           
         </div>
-
+        
         <script src="script.js"></script>
     </body>
 </html>
