@@ -1,14 +1,12 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-.content{
+#clock {
     text-align: center;
-}
-
-.content h1 {
     color: white;
-    font-weight: 100;
-    font-size: 50px;
-    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: lavenderblush 0 0 10px;
 }
 
 .container{
