@@ -1,9 +1,7 @@
-function myClock() {         
-    setTimeout(function() {   
-      const d = new Date();
-      const n = d.toLocaleTimeString();
-      document.getElementById("clock").innerHTML = n; 
-      myClock();             
-    }, 1000)
-  }
-  myClock(); 
+function updateClock() {
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString();
+    document.getElementById('clock').textContent = currentTime;
+    setTimeout(updateClock, 1000);
+}
+updateClock(); 
